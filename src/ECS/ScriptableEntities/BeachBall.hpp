@@ -12,6 +12,7 @@ private:
     float       m_timeBetweenAnimation = 3.0f;
     float       m_countDown = 0.0f;
     unsigned int m_animIndex = 0;
+
     std::vector<glm::vec2> m_spawnPoints = {};
 public:
     void OnCreate()
@@ -56,6 +57,15 @@ public:
         if (GetInputManager().JustPressedKey(SDLK_d))
         {
             GetScene().Instantiate("assets/prefebs/test_character.scene");
+        }
+
+        if (GetInputManager().GetKey(SDL_SCANCODE_W))
+        {
+            //Canis::Log("DOWN");
+        }
+        else
+        {
+            //Canis::Log("UP");
         }
     }
 };
