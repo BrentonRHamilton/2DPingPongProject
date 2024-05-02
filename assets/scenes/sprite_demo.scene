@@ -17,6 +17,25 @@ Entities:
     Canis::RectTransformComponent:
       active: true
       anchor: 6
+      position: [1000.0, 30.0]
+      size: [0.0, 0.0]
+      originOffset: [0.0, 0.0]
+      rotation: 0.0
+      scale: 1.0
+      depth: 0.1
+    Canis::ColorComponent:
+      color: [0.0, 1.0, 1.0, 1.0]
+    Canis::TextComponent:
+      assetId:
+        path: "assets/fonts/Antonio-Bold.ttf"
+        size: 48
+      text: "Right Player: 0"  
+      alignment: 0
+
+  - 2:
+    Canis::RectTransformComponent:
+      active: true
+      anchor: 6
       position: [30.0, 30.0]
       size: [0.0, 0.0]
       originOffset: [0.0, 0.0]
@@ -29,9 +48,10 @@ Entities:
       assetId:
         path: "assets/fonts/Antonio-Bold.ttf"
         size: 48
-      text: 2-D Pong Game
+      text: "Left Player: 0" 
       alignment: 0
-  - 2:
+
+  - 3:
       Canis::RectTransformComponent:
         active: true
         anchor: 6
@@ -49,12 +69,12 @@ Entities:
           size: 48
         text: Hello
         alignment: 0
-  - 3:
+  - 4:
     Canis::RectTransformComponent:
       active: true
       anchor: 6
       position: [0.0, 0.0]
-      size: [480.0, 500.0]
+      size: [240.0, 250.0]
       originOffset: [0.0, 0.0]
       rotation: 0
       scale: 1.0
@@ -70,7 +90,7 @@ Entities:
       layer: 0
       mask: 0
     Canis::ScriptComponent: BeachBall
-  - 4:
+  - 5:
     Canis::RectTransformComponent:
       active: true
       anchor: 6
@@ -81,7 +101,7 @@ Entities:
       scale: 1.0
       depth: 0.1
     Canis::ColorComponent:
-      color: [1.0, 1.0, 1.0, 1.0]
+      color: [0.0, 1.0, 1.0, 1.0]
     Canis::Sprite2DComponent:
       uv: [0.0, 0.0, 1.0, 1.0]
       texture: "assets/textures/All.png"
@@ -92,7 +112,7 @@ Entities:
       mask: 0
     Canis::ScriptComponent: Paddle
     Canis::TagComponent: PADDLELEFT
-  - 5:
+  - 6:
     Canis::RectTransformComponent:
       active: true
       anchor: 6
@@ -114,24 +134,19 @@ Entities:
       mask: 0
     Canis::ScriptComponent: Paddle
     Canis::TagComponent: PADDLERIGHT
-  - 6:
+  - 7:
     Canis::RectTransformComponent:
       active: true
       anchor: 6
-      position: [625.0, 0.0]
-      size: [240.0, 500.0]
+      position: [0.0, 0.0]
+      size: [2500.0, 2500.0]
       originOffset: [0.0, 0.0]
       rotation: 0
       scale: 1.0
-      depth: 0.1
+      depth: 1
     Canis::ColorComponent:
       color: [1.0, 1.0, 1.0, 1.0]
     Canis::Sprite2DComponent:
       uv: [0.0, 0.0, 1.0, 1.0]
-      texture: "assets/textures/All.png"
-    Canis::CircleColliderComponent:
-      center: [0.0, 0.0]
-      radius: 128.0
-      layer: 0
-      mask: 0
-    
+      texture: "assets/textures/gettyimages-1308372987-612x612.jpg"
+ 

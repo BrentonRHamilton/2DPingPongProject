@@ -89,7 +89,7 @@ public:
         auto entities = scene.GetEntities();
 
         // Collision detection with the ball
-        for (auto& entity : entities)
+        /*//for (auto& entity : entities)
         {
             if (entity.HasComponent<BeachBall>()) // Check if the entity is the beach ball
             {
@@ -105,9 +105,11 @@ public:
                 //auto& ballDirection = entity.GetComponent<BeachBall>().GetDirection();
                 m_direction.x *= -1.0f;
                 m_direction.y *= -1.0f;
+                m_direction.x *= 1.0f;
+                m_direction.y *= 1.0f;
                 }
             }
-        }
+        }*/
     }
         
 };
